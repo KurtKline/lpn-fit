@@ -10,12 +10,12 @@ Data cleaning and conversion for LPN Fitness Challenge
 **API**  
 `lpn_app` folder contains files necessary to run FastAPI with defined end points. 
 
-**Next steps**
-1) Set-up FastAPI locally and test functionality
-2) Create PostgreSQL db on AWS
-3) Load data into PostgreSQL db (from local PC)
-4) Update connection strings on API to prepare for push to AWS
-5) Deploy on AWS (Maybe Lambda, Elastic Beanstalk, not sure)
-6) Test functionality
-7) Figure out how to make it available to others
+**Next steps**  
+- [x] Set-up FastAPI locally and test functionality  
+- [ ] Create PostgreSQL db on AWS  
+- [ ] Load data into PostgreSQL db (from local PC)  
+- [ ] Update connection strings on API to prepare for push to AWS  
+- [ ] Deploy on AWS (Maybe Lambda, Elastic Beanstalk, not sure)  
+- [ ] Test functionality  
+- [ ] Figure out how to make it available to others  
 
