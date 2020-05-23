@@ -10,6 +10,9 @@ Data cleaning and conversion for LPN Fitness Challenge
 **API**  
 `lpn_app` folder contains files necessary to run FastAPI with defined end points. 
 
+**Calling API**  
+`call_api.py` is a base template for calling the API and loading into a dataframe. 
+
 **Next steps**  
 - [x] Set-up FastAPI locally and test functionality  
 - [ ] Create PostgreSQL db on AWS  
