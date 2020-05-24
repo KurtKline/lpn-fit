@@ -54,13 +54,19 @@ def read_season(season: str, db: Session = Depends(get_db)):
 def read_team_and_season(team: str, season: str, db: Session = Depends(get_db)):
     db_ts = crud.get_points_by_team_and_season(db, team=team, season=season)
     if db_ts is None:
-        raise HTTPException(status_code=404, detail="Team and Season combination not found")
+        raise HTTPException(
+            status_code=404, detail="Team and Season combination not found"
+        )
     return db_ts
 
 
-@app.get("/points/player/{player}/season/{season}", response_model=List[schemas.PointEvent])
+@app.get(
+    "/points/player/{player}/season/{season}", response_model=List[schemas.PointEvent]
+)
 def read_player_and_season(player: str, season: str, db: Session = Depends(get_db)):
     db_ps = crud.get_points_by_player_and_season(db, player=player, season=season)
     if db_ps is None:
-        raise HTTPException(status_code=404, detail="Player and Season combination not found")
+        raise HTTPException(
+            status_code=404, detail="Player and Season combination not found"
+        )
     return db_ps

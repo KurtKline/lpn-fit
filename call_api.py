@@ -1,5 +1,5 @@
 import requests
-import pandas as pd 
+import pandas as pd
 import json
 
 response = requests.get("http://127.0.0.1:8000/points/player/Kurt%20Kline")
